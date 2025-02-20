@@ -1,13 +1,14 @@
 ✨ What is TaskMate?
 
+🚀 TaskMate is a powerful task management web application designed to help users efficiently organize, manage, and track their tasks with ease.
+
+
 ![image](https://github.com/user-attachments/assets/8ef6115e-f7f0-4362-8452-b5ce5154bf81)
 ![image](https://github.com/user-attachments/assets/fba68a99-1c54-41d2-9d4a-d19750ee94b2)
 ![image](https://github.com/user-attachments/assets/e327b559-fe5c-47dd-bf50-038805973e53)
 ![image](https://github.com/user-attachments/assets/e2213723-2dd0-4370-a8ec-7d08655847b9)
 ![image](https://github.com/user-attachments/assets/ee445f51-0aaf-4b71-b161-aa86b77beec5)
 ![image](https://github.com/user-attachments/assets/8ae2dfd0-d38c-4d2e-81c2-f41d80bf177f)
-
-🚀 TaskMate is a powerful task management web application designed to help users efficiently organize, manage, and track their tasks with ease.
 
 🔹 Key Features
 ✅ Add Tasks: Easily create and manage tasks.
