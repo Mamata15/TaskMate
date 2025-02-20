@@ -1,0 +1,80 @@
+/* Ensure full height for html and body */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  /* Root container for the login page */
+  .login-root {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+  }
+  
+  /* Overall grid container */
+  .login-grid {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Left panel with gradient background */
+  .login-left-panel {
+    background: linear-gradient(to bottom right, #2684ff, #2cc3fe);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Centered content inside the left panel */
+  .welcome-content {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  /* Style for the welcome title */
+  .welcome-title {
+    font-weight: bold;
+    margin-bottom: 24px;
+  }
+  
+  /* Style for the welcome image */
+  .welcome-image {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  /* Right panel for the login form */
+  .login-right-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+  }
+  
+  /* Container for the login form */
+  .login-form-container {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Paper styling for the login form */
+  .login-paper {
+    padding: 24px;
+    border-radius: 8px;
+  }
+  
+  /* Form styling */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  

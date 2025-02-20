@@ -1,0 +1,25 @@
+/* SignupPage.css */
+.signup-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f5f5f5, #c2e9fb);
+  }
+  
+  .signup-paper {
+    padding: 32px;
+    border-radius: 8px;
+    min-width: 320px;
+  }
+  
+  .signup-title {
+    margin-bottom: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .signup-button {
+    text-transform: none;
+  }
+  

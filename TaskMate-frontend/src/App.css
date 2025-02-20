@@ -1,0 +1,13 @@
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-bar {
+  background-color: #fff;
+}
+
+.header-title {
+  font-weight: 600;
+}

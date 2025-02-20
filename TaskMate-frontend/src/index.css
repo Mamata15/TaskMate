@@ -1,0 +1,11 @@
+/* index.css */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  /* Subtle gradient background */
+  background: linear-gradient(135deg, #f5f6fa 0%, #ebecf0 100%);
+}
+
+/* You can keep or remove this if you don't want the gradient:
+   background-color: #f5f6fa; 
+*/
