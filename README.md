@@ -20,24 +20,19 @@
 With TaskMate, staying productive and organized has never been easier! 🎯
 
 🛠 TECHNOLOGIES USED & INSTALLATION LINKS
-
 🔹 Backend
 
-Spring Boot – Backend framework. ➡️ Download
-
+Spring Boot – Backend framework. ➡️ Download Spring Boot
 Java 17 – Backend programming language. ➡️ Download Java 17
-
 🔹 Frontend
 
 React.js – Interactive frontend UI. ➡️ Install Node.js (Required for React)
-
 🔹 Database
 
-MySQL Workbench – Database management. ➡️ Download
-
+MySQL Workbench – Database management. ➡️ Download MySQL Workbench
 🔹 API Testing
 
-Postman – API testing & debugging. ➡️ Download
+Postman – API testing & debugging. ➡️ Download Postman
 
 🚀 DEVELOPMENT PROCESS
 
