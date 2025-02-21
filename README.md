@@ -83,6 +83,96 @@ Ensure the following tools and technologies are installed on your system:
 🔹 API Testing (Optional but Recommended)
 ✅ Postman – For testing APIs before frontend integration.
 
+ TESTING API ENDPOINTS WITH POSTMAN
+After setting up the backend, you need to test the API endpoints before integrating them with the frontend. Follow these steps:
+
+🔹 Install & Open Postman
+Download & Install Postman from here.
+Open Postman and create a new request.
+🔹 Testing Backend Endpoints
+1️⃣ Start the Spring Boot Backend
+Ensure the backend is running:
+
+sh
+Copy
+Edit
+mvn spring-boot:run
+or run TaskMateApplication in your IDE.
+
+2️⃣ Check API Endpoints
+
+📌 Test User Authentication APIs
+Signup (POST Request) – Create a new user.
+
+URL: http://localhost:8080/api/auth/signup
+Select POST method.
+In Body (raw, JSON format), enter:
+json
+Copy
+Edit
+{
+  "username": "testuser",
+  "email": "test@example.com",
+  "password": "password123"
+}
+Click Send, and it should return a success message. 200 ok
+
+Login (POST Request) – Authenticate the user.
+
+URL: http://localhost:8080/api/auth/login
+In Body (raw, JSON format), enter:
+json
+Copy
+Edit
+{
+  "email": "test@example.com",
+  "password": "password123"
+}
+Click Send, and it should return a JWT token.
+📌 Test Task Management APIs
+Add Task (POST Request)
+
+URL: http://localhost:8080/api/tasks/add
+In Headers, add:
+makefile
+
+Authorization: Bearer <JWT_TOKEN>
+In Body (raw, JSON format), enter:
+json
+
+{
+  "title": "Complete project",
+  "description": "Finish TaskMate development",
+  "status": "Pending"
+}
+Click Send, and the task should be added successfully.
+Get All Tasks (GET Request)
+
+URL: http://localhost:8080/api/tasks
+In Headers, add:
+makefile
+
+Authorization: Bearer <JWT_TOKEN>
+Click Send, and it should return a list of tasks.
+Update Task (PUT Request)
+
+URL: http://localhost:8080/api/tasks/update/{taskId}
+In Body (raw, JSON format), enter:
+json
+
+{
+  "title": "Updated Task",
+  "description": "Updated description",
+  "status": "Completed"
+}
+Click Send, and the task should be updated.
+Delete Task (DELETE Request)
+
+URL: http://localhost:8080/api/tasks/delete/{taskId}
+Click Send, and the task should be deleted.
+🔹 Checking API Logs in Spring Boot
+While testing in Postman, you can check logs in your terminal where Spring Boot is running. If the APIs return expected responses, the backend is working correctly!
+
 📌 Steps to Run TaskMate
 1️⃣ Clone the Repository
 Use Git to clone the TaskMate project repository:
@@ -94,8 +184,7 @@ git clone <your-repo-url>
 Navigate into the project folder:
 
 sh
-Copy
-Edit
+
 cd TaskMate
 🔹 BACKEND SETUP (Spring Boot)
 2️⃣ Configure MySQL Database
@@ -112,14 +201,12 @@ spring.jpa.hibernate.ddl-auto=update
 Navigate to the backend folder:
 
 sh
-Copy
-Edit
+
 cd backend
 Run the application using:
 
 sh
-Copy
-Edit
+
 mvn spring-boot:run
 
 
@@ -128,21 +215,18 @@ mvn spring-boot:run
 Navigate to the frontend folder:
 
 sh
-Copy
-Edit
+
 cd frontend
 Install required dependencies in VS code
 
 sh
-Copy
-Edit
+
 npm install
 5️⃣ Start the React.js Application
 Run the frontend server:
 
 sh
-Copy
-Edit
+
 npm start
 The React app will be available at:
 http://localhost:3000
