@@ -64,6 +64,98 @@ Since the frontend was under development, APIs were tested using Postman to veri
 
 This structured approach ensured a smooth, secure, and efficient development process! 🚀
 
+🚀 HOW TO SET UP & RUN TASKMATE
+Follow these steps to install, set up, and run TaskMate seamlessly.
+
+🛠 Prerequisites
+Ensure the following tools and technologies are installed on your system:
+
+🔹 Backend
+✅ Java 17 – Required for running Spring Boot.
+✅ Spring Boot – Backend framework for TaskMate.
+
+🔹 Frontend
+✅ Node.js – Required for running the React.js frontend.
+
+🔹 Database
+✅ MySQL Workbench – Database management tool.
+
+🔹 API Testing (Optional but Recommended)
+✅ Postman – For testing APIs before frontend integration.
+
+📌 Steps to Run TaskMate
+1️⃣ Clone the Repository
+Use Git to clone the TaskMate project repository:
+
+sh
+Copy
+Edit
+git clone <your-repo-url>
+Navigate into the project folder:
+
+sh
+Copy
+Edit
+cd TaskMate
+🔹 BACKEND SETUP (Spring Boot)
+2️⃣ Configure MySQL Database
+Open MySQL Workbench and create a database named taskmate.
+Update application.properties  in the Spring Boot project with your database credentials:
+properties
+Copy
+Edit
+spring.datasource.url=jdbc:mysql://localhost:8080/task
+spring.datasource.username=root
+spring.datasource.password=your_password
+spring.jpa.hibernate.ddl-auto=update
+3️⃣ Run the Spring Boot Application
+Navigate to the backend folder:
+
+sh
+Copy
+Edit
+cd backend
+Run the application using:
+
+sh
+Copy
+Edit
+mvn spring-boot:run
+
+
+🔹 FRONTEND SETUP (React.js)
+4️⃣ Install Dependencies
+Navigate to the frontend folder:
+
+sh
+Copy
+Edit
+cd frontend
+Install required dependencies in VS code
+
+sh
+Copy
+Edit
+npm install
+5️⃣ Start the React.js Application
+Run the frontend server:
+
+sh
+Copy
+Edit
+npm start
+The React app will be available at:
+http://localhost:3000
+
+🎯 Testing the Setup
+✅ Open Postman and test API endpoints (http://localhost:8080/api/...).
+✅ Open a browser and navigate to http://localhost:3000 to interact with TaskMate.
+
+💡 Additional Notes
+If facing CORS issues, ensure the backend allows requests from the frontend domain (http://localhost:3000).
+For JWT authentication, ensure valid user credentials are used.
+
+
 🎨 FRONTEND DEVELOPMENT (REACT.JS)
 
 Once the backend was successfully tested using Postman, the focus shifted to frontend development using React.js.
